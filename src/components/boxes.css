@@ -1,0 +1,52 @@
+body {
+  padding: 20px;
+}
+
+/* small boxes styling start*/
+h1,
+h2 {
+  font-size: 2rem;
+}
+.details {
+  width: 200px;
+  height: 200px;
+  color: black;
+  padding: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 940px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* small boxes styling end*/
+
+/* big box styling start*/
+.big-box {
+  height: 400px;
+  width: 400px;
+  margin-left: 400px;
+}
+
+.box-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* big box styling end*/
